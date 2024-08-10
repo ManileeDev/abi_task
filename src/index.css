@@ -1,13 +1,346 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .header{
+  padding: 10px;
+  display: flex;
+} */
+
+.logo-container{
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4.39931px;
+gap: 2.2px;
+
+width: 120px;
+height: 47.29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.logo{
+font-size: 1.2rem;
+
+}
+
+.head-1{
+ /* Frame 1080 */
+
+/* Auto layout */
+/* Frame 1080 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+margin: 0 auto;
+width: 575px;
+height: 47.29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul li {
+ /* Frame 9670 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 4px;
+color: 
+#999999;
+
+width: 90px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.header-btns{
+/* Frame 1051 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+margin: 0 auto;
+width: 330px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+.header{
+  margin-right: 250px;
+  padding-top: 20px ;
+background: #FFFFFF;
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+
+}
+.login-btn{
+  /* Tertiary Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 16px 10px 20px;
+
+width: 100px;
+height: 48px;
+border: none;
+font-weight: 500;
+
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.getstarted-btn{
+  /* Primary Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 32px;
+
+width: 200px;
+height: 50px;
+
+/* Primary Colors/Crimson/Main Color - 300 */
+background: #FF6435;
+border-radius: 12px;
+color: white;
+font-weight: 500;
+border: none;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.banner{
+
+background: #200D00;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 30px 10px;
+margin-top: 20px;
+
+}
+
+.banner > h6{
+  /* Reach and connect with Top Agencies */
+
+
+
+/* Primary Colors/Crimson/Main Color - 300 */
+color: #FF6435;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.banner  h2{
+  /* Top 100 Public Relations Agencies in India (2024) */
+
+
+
+/* White */
+color: #FFFFFF;
+
+
+
+}
+
+.banner p {
+  color: #a4a4a4;
+}
+
+
+.banner span{
+  color: #FF6435;
+
+}
+
+
+.banner-created{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.banner-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-logo-text{
+  font-size: small;
+}
+
+.banner-logo-text p {
+  color: #999999;
+}
+
+.banner-created-date{
+  font-size: small;
+  font-weight: 500;
+}
+
+.banner-container{
+  border-bottom: 2px solid rgb(153, 153, 153,0.3);;
+}
+
+.posts-container{
+  /* Frame 9891 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 10px;
+align-items: center;
+padding: 50px 0px 0px 50px ;
+
+
+
+
+/* Inside auto layout */
+/* flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0; */
+
+}
+
+.post-card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid rgb(152, 144, 138 ,0.4);
+  padding: 20px;
+}
+
+.post-start{
+ display: flex;
+ gap: 10px;
+ width: 80%;
+}
+
+
+.post-img-container img{
+  border-radius: 5px;
+}
+
+.post-span{
+
+
+background: #F5F1EA;
+border-radius: 5px;
+padding: 5px;
+font-size: 12px;
+font-weight: 600;
+color: #2a2a2a;
+
+
+}
+
+.post-info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-info p{
+  color: #4D3D33;
+  font-size: medium;
+}
+
+.post-info ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.post-info ul li {
+  color: #98908A
+}
+
+.post-end > button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-end > button:hover{
+ background-color: #FF6435;
+ color: white;
 }
