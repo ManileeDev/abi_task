@@ -175,6 +175,10 @@ flex-grow: 0;
 
 }
 
+.getstarted-btn img{
+  
+}
+
 .banner{
 
 background: #200D00;
@@ -183,7 +187,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-padding: 30px 10px;
+padding: 60px 20px;
 margin-top: 20px;
 
 }
@@ -224,7 +228,6 @@ color: #FFFFFF;
 
 .banner span{
   color: #FF6435;
-
 }
 
 
@@ -282,7 +285,7 @@ flex-grow: 0; */
 
 .post-card{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgb(152, 144, 138 ,0.4);
   padding: 20px;
@@ -340,7 +343,251 @@ color: #2a2a2a;
   cursor: pointer;
 }
 
+
 .post-end > button:hover{
  background-color: #FF6435;
  color: white;
+}
+
+.explore-container{
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.explore-nav{
+  margin-left: 50px;
+}
+
+.explore-nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.explore-nav > ul li{
+  color: #4D3D33;
+}
+
+.explore-nav > ul li:last-child{
+  color: #FF6435;
+}
+
+.explore-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.explore-head{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.explore-head > h6{
+  color: #FF6435;
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.explore-head > pre{
+  text-align: center;
+  color: #4D3D33;
+  font-size: 1.3rem;
+}
+
+.explore-head > h2{
+  font-weight: 700;
+}
+
+.explore-cards{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+
+}
+
+.explore-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgb(152, 144, 138 ,0.4);
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+
+.explore-image > img{
+  width: 350px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.explore-card-details{
+  width: 350px;
+}
+.explore-card-details > h4{
+   text-align: center;
+}
+
+.explore-card-details > button {
+  outline: none;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.explore-card-details > button:hover{
+  background-color: #FF6435;
+  color: white;
+}
+
+
+.footer-container{
+  background: #200D00;
+  padding: 20px;
+  height: 392px;
+  margin-top: 30px;
+}
+
+.footer-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-right{
+  display: flex;
+  padding: 20px;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.footer-logos{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-logo-container{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-container p,pre{
+  color: white;
+}
+
+.footer-container span{
+  color: #6e6e6e;
+}
+
+.footer-right h3{
+  color: #FF6435;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.sidebar{
+  display: none;
+}
+
+.explore-head p{
+  display: none;
+}
+
+.mbbanner{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .head-1 > nav , .header-btns{
+      display: none;
+  }
+.sidebar{
+  display: inline;
+  margin-left: 180px;
+}
+.head-1{
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+.banner-created{
+  padding: 10px;
+}
+
+.posts-container{
+  padding: 5px 0px 0px 50px;
+}
+
+.post-card{
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.post-card p{
+  overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   width: 50%;
+}
+
+.post-card button{
+  visibility: hidden;
+}
+
+.explore-nav{
+   font-size: small;
+}
+
+.explore-head pre{
+  display: none;
+}
+
+.explore-head p{
+  display: block;
+}
+
+.explore-cards{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.explore-cards{
+  padding: 0;
+}
+
+.pcbanner{
+  display: none;
+}
+
+.mbbanner{
+  display: block;
+  padding: 10px 0px 0px 25px;
+}
+
+.footer-container{
+  font-size: 0.6rem;
+  padding: 0;
+  margin-top: 10px;
+}
+
+
+.footer-right{
+  display: block;
+}
 }

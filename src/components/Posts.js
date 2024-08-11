@@ -1,4 +1,10 @@
 import React from 'react'
+import aparntment from "../utils/aparntment.svg"
+import map from "../utils/map.svg"
+import year from "../utils/year.svg"
+import factory from "../utils/factory.svg"
+import arrow from "../utils/uparrow.svg"
+import whitearrow from "../utils/uparrowwhite.svg"
 
 const Posts = () => {
     const posts = [1,2,3,4,5,6,7,8,9,10]
@@ -16,16 +22,17 @@ const Posts = () => {
                         <p>The Mavericks: Transforming brands through strategic reputation management and consumer engagement
                         </p>
                         <ul>
-                            <li>1,001-5,000 employees</li>
-                            <li>Paris</li>
-                            <li>2009</li>
-                            <li>PR Agency
+                            <li><img src={aparntment} alt='aparntment'></img> 1,001-5,000 employees</li>
+                             
+                            <li><img src={map} alt=""></img> Paris</li>
+                            <li><img src={year} alt=""></img> 2009</li>
+                            <li><img src={factory} alt=""></img> PR Agency
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className='post-end'>
-                    <button>Post Brief</button>
+                    <button>Post brief</button>
                 </div>
             </div>))
             }
